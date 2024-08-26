@@ -19,11 +19,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: black; /* Background color for the entire website, including individual sections */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #5846f9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #000000; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -167,7 +167,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 80px;
+  max-height: 36px;
   margin-right: 8px;
 }
 
@@ -785,7 +785,7 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  background: linear-gradient(45deg, #00000 0%, color-mix(in srgb, , transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 
