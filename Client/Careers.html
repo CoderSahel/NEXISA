@@ -24,11 +24,11 @@
         <p class="text-base sm:text-lg text-gray-600 text-center mb-8 sm:mb-12 max-w-2xl">
             Join our team of innovative and passionate professionals. We're looking for talent to help us build the future. Please fill out the form below and select the domain you're interested in. Don't forget to submit your project link for review.
         </p>
-        <div class="w-full max-w-sm sm:max-w-md bg-white rounded-lg shadow-md p-6 sm:p-8">
-            <form action="#" method="POST">
+        <div id="form-container" class="w-full max-w-sm sm:max-w-md bg-white rounded-lg shadow-md p-6 sm:p-8">
+            <form action="#" method="POST" id="form">
                 <div class="mb-4 sm:mb-6">
                     <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name*</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter full name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
+                    <input type="text" id="name" name="fullName" required placeholder="Enter full name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
                 </div>
                 <div class="mb-4 sm:mb-6">
                     <label for="email" class="block text-gray-700 font-semibold mb-2">Email ID*</label>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="mb-4 sm:mb-6">
                     <label for="passout-year" class="block text-gray-700 font-semibold mb-2">Passout Year*</label>
-                    <input type="text" id="passout-year" name="passout-year" required placeholder="Enter your passing out year" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
+                    <input type="text" id="passout-year" name="yop" required placeholder="Enter your passing out year" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
                 </div>
                 <div class="mb-4 sm:mb-6">
                     <label for="domain" class="block text-gray-700 font-semibold mb-2">Domain for which you're applying*</label>
@@ -52,8 +52,8 @@
                     </select>
                 </div>
                 <div class="mb-4 sm:mb-6">
-                    <label for="submission-link" class="block text-gray-700 font-semibold mb-2">Submission Link*</label>
-                    <input type="url" id="submission-link" name="submission-link" required placeholder="Enter the submission link" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
+                    <label for="driveLink" class="block text-gray-700 font-semibold mb-2">Submission Link*</label>
+                    <input type="url" id="submission-link" name="driveLink" required placeholder="Enter the submission link" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
                 </div>
                 <div class="text-center">
                     <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 focus:outline-none">Submit</button>
@@ -89,4 +89,5 @@
         </div>
     </footer>
 </body>
+<script src="register.js"></script>
 </html>

@@ -2,6 +2,7 @@ const Register = require('../models/Register');
 
 exports.createRegister = async (req,res) => {
     try {
+        console.log('Request Body:', req.body);
         const { fullName, department, email, yop, domain, driveLink } = req.body;
         if(!fullName || !email || !department || !yop || !domain || !driveLink){
             return res.status(400).json({
